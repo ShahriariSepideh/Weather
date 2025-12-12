@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Weather Now</title>
+    <link href="weather.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="logo-wrapper">
+        <img alt="Logo" class="logo" src="assets/sun.png">
+        <p class="logo-type">Weather Now</p>
+    </div>
+    <div class="header-units">
+        <i class="fa-solid fa-gear unit-icon"></i>
+        <span>Units</span>
+        <ul class="units-dropdown">
+            <li>Houre</li>
+            <li>Day</li>
+            <li>Week</li>
+        </ul>
+    </div>
+</header>
+<main class="main">
+    <div class="layout">
+        <div class="services">
+            <h1 class="services-h1">How's the sky looking today?</h1>
+            <div class="search-wrapper">
+                <label class="sr-only" for="search">Search</label>
+                <input id="search" placeholder="Search for a palce...">
+                <button class="search-button">search</button>
+            </div>
+        </div>
+    </div>
+    <div class="info-box">
+        <!-- سمت راست -->
+        <div class="info-right">
+            <div class="info-place">Berlin, Germany</div>
+            <time class="info-date" datetime="2025-08-05">Tuesday, Aug 5, 2025</time>
+        </div>
+        <!-- سمت چپ -->
+        <div class="info-left">
+            <img alt="Sun" class="info-img" src="assets/sun.png">
+            <div class="info-temperature">20</div>
+        </div>
+    </div>
+    <div class="details-container">
+        <div class="details">
+            <div class="details-title">Feels like</div>
+            <div class="details-info">18</div>
+        </div>
+        <div class="details">
+            <div class="details-title">Humidity</div>
+            <div class="details-info">46%</div>
+        </div>
+        <div class="details">
+            <div class="details-title">Wind</div>
+            <div class="details-info">14 km/h</div>
+        </div>
+        <div class="details">
+            <div class="details-title">Precipitation</div>
+            <div class="details-info">0 mm</div>
+        </div>
+    </div>
+    <div class="daily">
+        <div class="daily-header">Daily forecast</div>
+        <div class="daily-container">
+            <div class="daily-box">
+                <div class="daily-box-header">Tue</div>
+                <div class="daily-box-img">
+                    <img alt="sun" src="assets/sun.png">
+                </div>
+                <div class="daily-box-info">
+                    <div class="temp-max">20</div>
+                    <div class="temp-min">14</div>
+                </div>
+            </div>
+            <div class="daily-box">
+                <div class="daily-box-header">Wed</div>
+                <div class="daily-box-img">
+                    <img alt="sun" src="assets/sun.png">
+                </div>
+                <div class="daily-box-info">
+                    <div class="temp-max">22</div>
+                    <div class="temp-min">15</div>
+                </div>
+            </div>
+            <div class="daily-box">
+                <div class="daily-box-header">Thu</div>
+                <div class="daily-box-img">
+                    <img alt="sun" src="assets/sun.png">
+                </div>
+                <div class="daily-box-info">
+                    <div class="temp-max">18</div>
+                    <div class="temp-min">12</div>
+                </div>
+            </div>
+            <div class="daily-box">
+                <div class="daily-box-header">Fri</div>
+                <div class="daily-box-img">
+                    <img alt="sun" src="assets/sun.png">
+                </div>
+                <div class="daily-box-info">
+                    <div class="temp-max">21</div>
+                    <div class="temp-min">16</div>
+                </div>
+            </div>
+            <div class="daily-box">
+                <div class="daily-box-header">Sat</div>
+                <div class="daily-box-img">
+                    <img alt="sun" src="assets/sun.png">
+                </div>
+                <div class="daily-box-info">
+                    <div class="temp-max">24</div>
+                    <div class="temp-min">18</div>
+                </div>
+            </div>
+            <div class="daily-box">
+                <div class="daily-box-header">Sun</div>
+                <div class="daily-box-img">
+                    <img alt="sun" src="assets/sun.png">
+                </div>
+                <div class="daily-box-info">
+                    <div class="temp-max">19</div>
+                    <div class="temp-min">15</div>
+                </div>
+            </div>
+            <div class="daily-box">
+                <div class="daily-box-header">Mon</div>
+                <div class="daily-box-img">
+                    <img alt="sun" src="assets/sun.png">
+                </div>
+                <div class="daily-box-info">
+                    <div class="temp-max">20</div>
+                    <div class="temp-min">14</div>
+                </div>
+            </div>
+            <div class="daily-box">
+                <div class="daily-box-proverb">
+                    Every cloud has a silver lining.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hourly-box">
+        <div class="hourly-top">
+            <p class="hourly-title">Hourly forecast</p>
+            <div class="hourly-days">
+                <span class="hourly-days-btn">Today</span>
+                <ul class="hourly-days-dropdown">
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                    <li>Saturday</li>
+                    <li>Sunday</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hourly-list">
+        <div class="hourly-item">
+            <div class="hourly-left">
+                <img alt="sun" class="hourly-icon" src="assets/sun.png">
+                <span class="hourly-time">3 PM</span>
+            </div>
+            <div class="hourly-temp">20°</div>
+        </div>
+        <div class="hourly-item">
+            <div class="hourly-left">
+                <img alt="sun" class="hourly-icon" src="assets/sun.png">
+                <span class="hourly-time">4 PM</span>
+            </div>
+            <div class="hourly-temp">18°</div>
+        </div>
+        <div class="hourly-item">
+            <div class="hourly-left">
+                <img alt="sun" class="hourly-icon" src="assets/sun.png">
+                <span class="hourly-time">3 PM</span>
+            </div>
+            <div class="hourly-temp">20°</div>
+        </div>
+        <div class="hourly-item">
+            <div class="hourly-left">
+                <img alt="sun" class="hourly-icon" src="assets/sun.png">
+                <span class="hourly-time">4 PM</span>
+            </div>
+            <div class="hourly-temp">18°</div>
+        </div>
+        <div class="hourly-item">
+            <div class="hourly-left">
+                <img alt="sun" class="hourly-icon" src="assets/sun.png">
+                <span class="hourly-time">3 PM</span>
+            </div>
+            <div class="hourly-temp">20°</div>
+        </div>
+        <div class="hourly-item">
+            <div class="hourly-left">
+                <img alt="sun" class="hourly-icon" src="assets/sun.png">
+                <span class="hourly-time">4 PM</span>
+            </div>
+            <div class="hourly-temp">18°</div>
+        </div>
+        <div class="hourly-item">
+            <div class="hourly-left">
+                <img alt="sun" class="hourly-icon" src="assets/sun.png">
+                <span class="hourly-time">3 PM</span>
+            </div>
+            <div class="hourly-temp">20°</div>
+        </div>
+        <div class="hourly-item">
+            <div class="hourly-left">
+                <img alt="sun" class="hourly-icon" src="assets/sun.png">
+                <span class="hourly-time">4 PM</span>
+            </div>
+            <div class="hourly-temp">18°</div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
